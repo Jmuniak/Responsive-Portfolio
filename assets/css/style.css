@@ -3,31 +3,38 @@
  **/
 
 
-/* White header background
+/* White header background */
 .outer-container {
   margin: 0%;
-  height: 70px;
+  height: 68px;
   background: #fff;
-} */
+	  border-bottom: 2px solid #cccccc;
+}
+.header {
 
-
-/* Content width in header */
-.nameBanner h1 {
-  max-width: 960px;
-  margin: 0 auto;
-  border-bottom: 2px solid #cccccc;
   margin: 0% auto;
   padding: 0;
 }
 
+/* Content width in header */
+.header-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 /* Banner */
-.nameBanner h1, 
+.banner, 
 .nav {
   display: inline-block;
   padding: 20px 15px;
 }
 
-.namebanner h1 {
+.navbar {
+	display: inline-block;
+	float: right;
+}
+
+.banner {
 float: left;
 background-color: #4aaaa5;
 }
@@ -37,13 +44,13 @@ background-color: #4aaaa5;
   background-color: #fff; 
 }
 
-.nameBanner h1 {
+.banner h2 {
   color: white;
   display: inline;
 }
 
 /* About me box */
-div.AboutMeContainer {
+.AboutMeContainer {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
@@ -54,15 +61,15 @@ div.AboutMeContainer {
 }
 
 /* Contact Form from w3schools */
-div.ContactContainer {
+.ContactContainer {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 5px;
   background: white;
   border: #cccccc;
+  background-color: #fff;
   color:#4aaaa5;
-  background-color: #f2f2f2;
+	clear: both;
 }
 
 input[type=text], select, textarea {
@@ -89,13 +96,15 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-div.ContactContainer {
-  
+.ContactContainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 /* end of contact form */
 
 /* Portfolio Gallery */
-div.PortfolioContainer {
+.PortfolioContainer {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
@@ -104,31 +113,44 @@ div.PortfolioContainer {
   background-color: #fff;
   color:#4aaaa5;
 }
+
+
 /* Gallery styling */
-div.portfolio-exampleImage {
+.portfolio-example {
   display: inline-block;
   width: calc(100% / 3 - 33px);
+	max-width: 200px;
   margin: 0 5px;
   position: relative;
 }
 
-div.portfolio-exampleImage img {
+.portfolio-example img {
     max-width: 100%;
   }
+
+.examples-container {
+	text-align: center;
+}
 
 
 /* General body and background */
 body {
   background: url("https://www.toptal.com/designers/subtlepatterns/patterns/papyrus.png");
+	margin: 0;
 }
 
-nav a, nav ul, nav li {
-  float: right;
+.navbar a, .navbar ul, .navbar li {
+/*  float: right;*/
   text-decoration: none;
   list-style-type: none;
   letter-spacing: 2px;
   word-spacing: 2px;
   padding: 2px; 
+}
+
+.navbar ul {
+	width: 100%;
+	text-align: center;
 }
 
 hr {
@@ -155,7 +177,7 @@ a {
 
 /* Gallery example title styling */
 h3.pexample-label {
-  position: ;
+  position: absolute;
   display: block;
   bottom: 15px;
   width: 200px;
@@ -187,7 +209,20 @@ footer {
 @media screen and (max-width: 640px) {
 /* Content width in header */
 
-
+	.navbar ul {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.banner, 
+	.nav {
+		padding: 20px 0px;
+	}
+	
+	.navbar {
+		width: 100%;
+		background: white;
+	}
 
 /* Content width in header */
 .wrapper {
@@ -207,7 +242,7 @@ footer {
   width: 100%;
 }
 
-.navbarContainer nav ul li {
+.navbarContainer .navbar ul li {
   clear: both;
   display: block;
   text-align: center;
@@ -219,15 +254,42 @@ footer {
 .AboutMeContainer {
   clear: both;
 }
-div.portfolio-example {
+.portfolio-example {
   width: 100%;
 }
 
-div.portfolio-example {
-  display: block;
+/*
+.portfolio-example {
+  display: inline-block;
+  align-content: center;
   width: 100%;
-  margin: 0% auto;
+  margin: 10 10px;
+  position: relative;
+}
+*/
+
+}
+
+.portfolio-example {
+	display: block;
+	width: 200px;
+  align-content: center;
+  margin: 15px auto;
   position: relative;
 }
 
+@media screen and (min-width: 500px) {
+	.portfolio-example {
+		display: inline-block;
+		width: calc(100% / 2 - 2px);
+		margin: 15px;
+	}
+	
 }
+
+@media screen and (min-width: 759px) {
+	.portfolio-example {
+		width: calc(100% / 3 - 3px);
+	}
+}
+
