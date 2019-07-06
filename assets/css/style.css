@@ -3,32 +3,31 @@
  **/
 
 
-/* White header background */
+/* White header background
 .outer-container {
   margin: 0%;
   height: 70px;
   background: #fff;
-}
-.header {
+} */
+
+
+/* Content width in header */
+.nameBanner h1 {
+  max-width: 960px;
+  margin: 0 auto;
   border-bottom: 2px solid #cccccc;
   margin: 0% auto;
   padding: 0;
 }
 
-/* Content width in header */
-.header-content {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
 /* Banner */
-.banner, 
+.nameBanner h1, 
 .nav {
   display: inline-block;
   padding: 20px 15px;
 }
 
-.banner {
+.namebanner h1 {
 float: left;
 background-color: #4aaaa5;
 }
@@ -38,13 +37,13 @@ background-color: #4aaaa5;
   background-color: #fff; 
 }
 
-.banner h2 {
+.nameBanner h1 {
   color: white;
   display: inline;
 }
 
 /* About me box */
-.AboutMeContainer {
+div.AboutMeContainer {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
@@ -55,14 +54,15 @@ background-color: #4aaaa5;
 }
 
 /* Contact Form from w3schools */
-.ContactContainer {
+div.ContactContainer {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
+  border-radius: 5px;
   background: white;
   border: #cccccc;
-  background-color: #fff;
   color:#4aaaa5;
+  background-color: #f2f2f2;
 }
 
 input[type=text], select, textarea {
@@ -89,15 +89,13 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.ContactContainer {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+div.ContactContainer {
+  
 }
 /* end of contact form */
 
 /* Portfolio Gallery */
-.PortfolioContainer {
+div.PortfolioContainer {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
@@ -107,14 +105,14 @@ input[type=submit]:hover {
   color:#4aaaa5;
 }
 /* Gallery styling */
-.portfolio-example {
+div.portfolio-exampleImage {
   display: inline-block;
   width: calc(100% / 3 - 33px);
   margin: 0 5px;
   position: relative;
 }
 
-.portfolio-example img {
+div.portfolio-exampleImage img {
     max-width: 100%;
   }
 
@@ -157,7 +155,7 @@ a {
 
 /* Gallery example title styling */
 h3.pexample-label {
-  position: absolute;
+  position: ;
   display: block;
   bottom: 15px;
   width: 200px;
@@ -221,15 +219,14 @@ footer {
 .AboutMeContainer {
   clear: both;
 }
-.portfolio-example {
+div.portfolio-example {
   width: 100%;
 }
 
-.portfolio-example {
-  display: inline-block;
-  align-content: center;
+div.portfolio-example {
+  display: block;
   width: 100%;
-  margin: 10 10px;
+  margin: 0% auto;
   position: relative;
 }
 
