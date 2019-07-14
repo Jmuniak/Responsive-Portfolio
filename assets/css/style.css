@@ -186,6 +186,17 @@ h3.pexample-label {
   background: #4aaaa5;
 }
 
+a.portfolioLink {
+  text-decoration: none;
+  position: absolute;
+  display: block;
+  bottom: 1px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  background: #4aaaa5;
+}
+
 /* Sticky footer */
 footer {
   position: fixed;
