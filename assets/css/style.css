@@ -37,7 +37,7 @@
 
 .banner {
   float: left;
-  background-color: coral;
+  background-color: lightslategray;
 }
 
 .nav {
@@ -60,6 +60,7 @@ a {
   border: #cccccc;
   background-color: #fff;
   color: coral;
+  margin-top: 60px;
 }
 
 
@@ -69,10 +70,24 @@ a {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  background: white;
   border: #cccccc;
-  background-color: #fff;
-  color: coral;
+  background: url("https://images.wallpaperscraft.com/image/trunk_tree_texture_119590_1024x600.jpg");
+}
+
+.contactContainer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  border: #cccccc;
+  background: url("https://images.wallpaperscraft.com/image/trunk_tree_texture_119590_1024x600.jpg");
+}
+
+.AboutMeContainer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  border: #cccccc;
+  background: url("https://images.wallpaperscraft.com/image/trunk_tree_texture_119590_1024x600.jpg");
 }
 
 
@@ -81,6 +96,7 @@ a {
   display: inline-block;
   width: calc(100% / 3 - 33px);
   max-width: 200px;
+  max-height: 200px;
   margin: 0 5px;
   position: relative;
 }
@@ -102,9 +118,7 @@ body {
 
 .myName a {
   text-decoration: none;
-
 }
-
 
 .navbar a,
 .navbar ul,
@@ -134,15 +148,23 @@ h4 {
   color: coral;
 }
 
-.contactInfo a {
+.contactInfo a,
+h5 {
   text-decoration: none;
-  color: grey;
+  color: whitesmoke;
   font-weight: bolder;
+}
 
+.contactInfo a {
+  text-decoration: underline;
 }
 
 .gray {
   color: #777777;
+}
+
+.white {
+  color: whitesmoke;
 }
 
 p,
@@ -154,13 +176,21 @@ a {
 
 /* Gallery example title styling */
 h3.pexample-label {
-  position: absolute;
+  position: relative;
+  display: block;
+  bottom: 75px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+}
+
+h3.pexample-label2 {
+  position: relative;
   display: block;
   bottom: 15px;
   width: 200px;
   text-align: center;
   color: #fff;
-  background: coral;
 }
 
 a.portfolioLink {
@@ -171,7 +201,7 @@ a.portfolioLink {
   width: 200px;
   text-align: center;
   color: #fff;
-  background: coral;
+  background: lightslategray;
 }
 
 /* Sticky footer */
@@ -185,7 +215,7 @@ footer {
   background: #666666;
   border-top: solid 8px coral;
   text-align: center;
-  color: black;
+  color: whitesmoke;
 }
 
 
@@ -200,6 +230,8 @@ footer {
   .navbar ul {
     width: 100%;
     text-align: center;
+    background: whitesmoke;
+    display: block;
   }
 
   .banner,
@@ -209,7 +241,6 @@ footer {
 
   .navbar {
     width: 100%;
-    background: white;
   }
 
   /* Content width in header */
@@ -221,7 +252,7 @@ footer {
   /* Banner */
   .banner {
     width: 100%;
-    background-color: coral;
+    background-color: lightslategray;
   }
 
   .banner h2 {
@@ -237,11 +268,17 @@ footer {
     text-align: center;
   }
 
-
-
-
   .AboutMeContainer {
     clear: both;
+    margin-top: 60px;
+  }
+
+  .contactContainer {
+    margin-top: 60px;
+  }
+
+  .PortfolioContainer {
+    margin-top: 60px;
   }
 
   .portfolio-example {
